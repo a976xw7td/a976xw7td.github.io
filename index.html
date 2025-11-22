@@ -1,3 +1,297 @@
-<title>Hello World</title>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人介绍 | GitHub</title>
+    <!-- 引入Font Awesome图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 引入Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- 引入自定义CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="navbar">
+        <nav class="container">
+            <div class="logo">
+                <a href="#">个人博客</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">关于我</a></li>
+                <li><a href="#skills">技能</a></li>
+                <li><a href="#projects">项目</a></li>
+                <li><a href="#contact">联系方式</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<h1> Hello World </h1>
+    <!-- 英雄区域 -->
+    <section class="hero">
+        <div class="container">
+            <div class="profile">
+                <img src="https://via.placeholder.com/200" alt="个人头像" class="profile-img">
+                <h1>我的名字</h1>
+                <p class="title">前端开发者 / 设计师</p>
+                <div class="social-links">
+                    <a href="#" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank" class="social-link"><i class="fab fa-codepen"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">关于我</h2>
+            <div class="about-content">
+                <p>你好！我是一名充满激情的前端开发者，热爱创建美观、实用的Web应用。我专注于提供卓越的用户体验，并不断学习新技术来提升自己的技能。</p>
+                <p>我有X年的Web开发经验，擅长HTML、CSS、JavaScript以及相关的框架和库。我注重代码质量，喜欢解决复杂的问题，并乐于与团队协作完成项目。</p>
+                <p>除了编程，我还对UI/UX设计、响应式布局和性能优化有浓厚的兴趣。在空闲时间，我喜欢阅读技术博客、参与开源项目，以及探索新的前端技术趋势。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技能 -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">技能</h2>
+            <div class="skills-grid">
+                <!-- 前端技能 -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> 前端开发</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>HTML5</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>CSS3</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>React</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Vue.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 设计技能 -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-paint-brush"></i> 设计技能</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>UI/UX设计</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Figma</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>响应式设计</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>动画设计</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 65%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 开发工具 -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> 开发工具</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Git</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Webpack</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>VS Code</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>NPM/Yarn</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 项目展示 -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">项目展示</h2>
+            <div class="projects-grid">
+                <!-- 项目1 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/400x300" alt="项目截图">
+                    </div>
+                    <div class="project-info">
+                        <h3>项目名称1</h3>
+                        <p>这是一个简洁的描述，介绍这个项目的主要功能和技术栈。</p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="btn">查看演示</a>
+                            <a href="#" target="_blank" class="btn btn-secondary">查看代码</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 项目2 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/400x300" alt="项目截图">
+                    </div>
+                    <div class="project-info">
+                        <h3>项目名称2</h3>
+                        <p>这是一个简洁的描述，介绍这个项目的主要功能和技术栈。</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="btn">查看演示</a>
+                            <a href="#" target="_blank" class="btn btn-secondary">查看代码</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 项目3 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/400x300" alt="项目截图">
+                    </div>
+                    <div class="project-info">
+                        <h3>项目名称3</h3>
+                        <p>这是一个简洁的描述，介绍这个项目的主要功能和技术栈。</p>
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>Firebase</span>
+                            <span>Chart.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="btn">查看演示</a>
+                            <a href="#" target="_blank" class="btn btn-secondary">查看代码</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">联系方式</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>email@example.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+86 123 4567 8910</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>中国，城市</span>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form action="" method="POST">
+                        <div class="form-group">
+                            <label for="name">姓名</label>
+                            <input type="text" id="name" name="name" placeholder="您的姓名">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">邮箱</label>
+                            <input type="email" id="email" name="email" placeholder="您的邮箱">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">留言</label>
+                            <textarea id="message" name="message" rows="5" placeholder="请输入您的留言"></textarea>
+                        </div>
+                        <button type="submit" class="btn">发送留言</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p>&copy; 2023 个人博客. 保留所有权利.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank" class="social-link"><i class="fab fa-codepen"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 回到顶部按钮 -->
+    <button id="back-to-top" class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- 引入JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
